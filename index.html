@@ -12,7 +12,12 @@
 
     <h2>GitHub Search</h2>
 
-    <form id='github-form'>
+    <form action="/action_page.php" id='github-form'>
+      <label for ="search">Search for:</label>
+      <select name="searchfor" id="searchFor">
+        <option value="Users">Users(s)</option>
+        <option value="Repos">Repositorie(s)</option>
+      </select>
       <input id='search' type='text' name='search'>
       <input type='submit' name='submit'/>
     </form>
